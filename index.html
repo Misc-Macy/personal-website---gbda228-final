@@ -25,15 +25,22 @@
       }
 
       .background {
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 3%;
-        margin-left: -18%;
-        margin-top: 25%;
-        width: 47%;
-        height: auto;
-        opacity: 0.33;
-      }
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-bottom: 3%;       /* lifts the bottom behind the bar */
+  margin-left: -18%;
+  width: 100%;
+  opacity: 0.33;
+}
+
+.background img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left bottom;
+}
 
       .content {
         width: 960px;
@@ -116,7 +123,9 @@
   <body>
     <div class="container">
 
-      <img class="background" src="Hades_Character.png" alt="BG Character">
+      <div class="background">
+  <img src="Hades_Character.png" alt="BG Character">
+</div>
       
       <div class="content">
 
