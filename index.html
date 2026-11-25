@@ -1,98 +1,101 @@
+
 <!DOCTYPE html>
-<html lang="en=ca">
+<html lang="en-CA">
   <head>
     <title>GBDA228 Final Project - Personal Website</title>
-    
+
+    <meta charset="utf-8">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
-    
-      <!-- 
-        Code copied from:
-          https://www.w3schools.com/css/css3_gradients.asp;
-        Author: W3 Schools;
-        Name: CSS Gradients;
-        Description: Background gradient colour;
-        Date retrieved: Nov. 25, 2026;
-      -->
-    
-    <!-- 
-        Code copied from:
-          https://www.w3schools.com/css/css_image_transparency.asp;
-        Author: W3 Schools;
-        Name: CSS Opacity;
-        Description: Opacity of background image;
-        Date retrieved: Nov. 25, 2026;
-      -->
-    
-    <meta charset="utf-8">
+
+    <!--
+      Code copied from:
+      https://www.w3schools.com/css/css3_gradients.asp;
+      Author: W3 Schools;
+      Name: CSS Gradients;
+      Description: Background gradient colour;
+      Date retrieved: Nov. 25, 2026;
+    -->
+
+    <!--
+      Code copied from:
+      https://www.w3schools.com/css/css_image_transparency.asp;
+      Author: W3 Schools;
+      Name: CSS Opacity;
+      Description: Background image opacity;
+      Date retrieved: Nov. 25, 2026;
+    -->
+
     <style>
-      
+
+      /* 1440px Artboard */
       .container {
-        width: 1440px;
+        width: 100%;
+        max-width: 1440px;
         margin: auto;
         position: relative;
       }
-      
+
+      /* Background Character */
       .background {
         position: absolute;
         margin-left: -240px;
         opacity: 0.33;
       }
-      
-      .logo {
-        position: absolute;
-        display: block;
-        margin: 180px 120px auto 120px;
-        opacity: 1;
-        width: 800px;
-      }
-      
+
+      /* 1200px Content Container */
       .content {
         width: 1200px;
+        max-width: 100%;
         margin: auto;
-        margin-top: 0;
-        opacity: 1;
+        position: relative;
       }
-      
-      .content img {
-        opacity: 1;
-        max-width: 1440px;
-        display: block; 
-        margin: 60px auto 0;
+
+      /* Hades Logo */
+      .logo {
+        display: block;
+        width: 800px;
+        max-width: 100%;
+        height: auto;
+        margin: 180px auto 0;
       }
-      
+
       body {
         margin: 0;
-        opacity: 1;
         background-image: linear-gradient(to bottom right, #011206, #1c542c);
         background-attachment: fixed;
         min-height: 100vh;
-        background-size: cover;
       }
-      
+
       h1 {
         font-family: "Alegreya SC", serif;
         color: #FF0000;
-        opacity: 1;
         margin-left: 120px;
         margin-top: 120px;
-        }
+      }
+
     </style>
   </head>
-  
+
   <body>
+
     <div class="container">
-      <img class="background" src="Hades_Character.png" alt="BG Character">;
-      <img class="logo" src="Hades_logo.png" alt="Title Card">;
+
+      <img class="background" src="Hades_Character.png" alt="BG Character">
+
       <div class="content">
+
         <h1>
           A deep dive into the world of
         </h1>
 
-        
-        
+        <img class="logo" src="Hades_logo.png" alt="Title Card">
+
       </div>
+
     </div>
+
   </body>
 </html>
