@@ -11,6 +11,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
 
+    <!--
+    Code copied from:
+      https://www.w3schools.com/css/css3_gradients.asp;
+      Author: W3 Schools;
+      Name: CSS Gradients;
+      Description: Background gradient colour;
+      Date retrieved: Nov. 25, 2026;
+    -->
+
+    <!--
+      Code copied from:
+      https://www.w3schools.com/css/css_image_transparency.asp;
+      Author: W3 Schools;
+      Name: CSS Opacity;
+      Description: Background image opacity;
+      Date retrieved: Nov. 25, 2026;
+    -->
+
+    <!--
+      Code copied from:
+      https://www.w3schools.com/css/css_text_shadow.asp;
+      Author: W3 Schools;
+      Name: CSS Text Shadow;
+      Description: Text shadow for greater emphasis;
+      Date retrieved: Nov. 25, 2026;
+    -->
+    
+    <!--
+      Code copied from:
+      https://www.w3schools.com/css/css3_object-fit.asp;
+      Author: W3 Schools;
+      Name: CSS Object Fit Property;
+      Description: Editing sizing of background images to scale to fit;
+      Date retrieved: Nov. 25, 2026;
+    -->
+    
     <style>
       body {
         margin: 0;
@@ -25,22 +61,22 @@
       }
 
       .background {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin-bottom: 3%;       /* lifts the bottom behind the bar */
-  margin-left: -18%;
-  width: 100%;
-  opacity: 0.33;
-}
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-bottom: 3%;
+        margin-left: -18%;
+        width: 100%;
+        opacity: 0.33;
+      }
 
-.background img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: left bottom;
-}
+      .background img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: left bottom;
+      }
 
       .content {
         width: 960px;
@@ -107,8 +143,15 @@
       .button-container {
         background-color: #000000;
         width: 100%;
-        min-height: 1000px;
         margin: -2.5% 0 0;
+        min-height: 750px;
+      }
+
+      .button-container img {
+        display: block;
+        height: 750px;
+        margin: auto -75px auto auto;
+        max-height: 750px;
       }
       
       @media (max-width: 1200px) {
@@ -147,6 +190,8 @@
     </div>
       
       <div class="button-container">
+        <img src="Zagreus.png" alt="Button container deco">
+        
         <!-- Your six buttons go here -->
       </div>
   </body>
