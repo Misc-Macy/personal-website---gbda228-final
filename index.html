@@ -47,6 +47,24 @@
       Date retrieved: Nov. 25, 2026;
     -->
     
+    <!--
+      Code copied from:
+      https://www.w3schools.com/cssref/pr_grid-template-columns.php;
+      Author: W3 Schools;
+      Name: CSS Grid-Template-Columns Property;
+      Description: Settings for the buttons on homepage
+      Date retrieved: Nov. 26, 2026;
+    -->
+    
+    <!--
+      Code copied from:
+      https://www.w3schools.com/css/css3_transitions.asp;
+      Author: W3 Schools;
+      Name: CSS Transitions;
+      Description: Making buttons have hover animations
+      Date retrieved: Nov. 26, 2026;
+    -->
+    
     <style>
       body {
         margin: 0;
@@ -162,7 +180,7 @@
       .buttons {
         list-style: none;
         margin: auto;
-        padding: 0;
+        padding: 90;
         width: 100%;
         max-width: 900px;
         display: grid;
@@ -181,11 +199,10 @@
         background-color: #011206;
         border: 2px solid #FF0000;
         border-radius: 5px;
-        transition: color 0.2s, background-color 0.2s;
+        transition: color 0.5s, background-color 0.5s;
       }
       
-      .buttons a:hover,
-      .buttons a:focus {
+      .buttons a:hover, .buttons a:focus {
         color: #000000;
         background-color: #FF0000;
       }
