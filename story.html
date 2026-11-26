@@ -1,3 +1,148 @@
-<p>
-  story
-</p>
+
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <title>Story - GBDA228 Final Project</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        background-image: linear-gradient(to bottom right, #011206, #1c542c);
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+
+      .container {
+        width: 100%;
+        position: relative;
+      }
+
+      .background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-bottom: 3%;
+        margin-left: -18%;
+        width: 100%;
+        opacity: 0.33;
+      }
+
+      .background img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: left bottom;
+      }
+
+      .content {
+        width: 960px;
+        max-width: 100%;
+        margin: auto;
+        padding: 0 120px;
+        position: relative;
+      }
+
+      .back {
+        display: block;
+        width: 150px;
+        margin: 40px 0 0;
+        padding: 10px;
+        font-family: "Alegreya SC", serif;
+        font-size: 1.25em;
+        text-align: center;
+        text-decoration: none;
+        color: #FF0000;
+        background-color: #011206;
+        border: 2px solid #FF0000;
+        border-radius: 5px;
+        transition: color 0.5s, background-color 0.5s;
+      }
+
+      .back:hover, .back:focus {
+        color: #000000;
+        background-color: #FF0000;
+      }
+
+      h1 {
+        font-family: "Alegreya SC", serif;
+        font-size: 3.5em;
+        color: #FF0000;
+        margin: 60px 0 0;
+        text-shadow: 0px 0px 5px #000000;
+      }
+
+      p {
+        font-family: "Alegreya SC", serif;
+        color: #FF0000;
+        font-size: 1.75em;
+        width: 100%;
+        margin: 30px 0 0;
+        text-shadow: 0px 0px 6px #000000;
+      }
+
+      .box {
+        width: 100%;
+        margin-top: 120px;
+      }
+
+      .box img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .page-body {
+        background-color: #000000;
+        width: 100%;
+        margin: -2.5% 0 0;
+        padding-top: 6%;
+        min-height: 750px;
+      }
+
+      @media (max-width: 1200px) {
+        .content {
+          width: 80%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="background">
+        <img src="Hades_Character.png" alt="BG Character">
+      </div>
+
+      <div class="content">
+
+        <a class="back" href="index.html">Home</a>
+
+        <h1>Story</h1>
+
+        <p>
+         Learn about the story behind the game, as well as the different romantic subplots that you are able to indulge in throughout your time in the Underworld.
+        </p>
+
+      </div>
+
+      <div class="box">
+        <img src="Container-Top.png" alt="Content container top">
+      </div>
+    </div>
+
+    <div class="page-body">
+      <!-- Story content goes here -->
+    </div>
+  </body>
+</html>
