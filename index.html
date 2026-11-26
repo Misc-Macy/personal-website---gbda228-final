@@ -144,16 +144,50 @@
         background-color: #000000;
         width: 100%;
         margin: -2.5% 0 0;
+        padding-top: 6%;
         min-height: 750px;
+        display: grid;
+        grid-template-columns: 1fr auto;
       }
 
-      .button-container img {
+      .zagreus {
         display: block;
         width: 300px;
         height: 750px;
-        margin-left: auto;
+        margin-top: auto;
         object-fit: cover;
         object-position: left bottom;
+      }
+      
+      .buttons {
+        list-style: none;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      
+      .buttons a {
+        display: block;
+        padding: 30px 10px;
+        font-family: "Alegreya SC", serif;
+        font-size: 1.5em;
+        text-align: center;
+        text-decoration: none;
+        color: #FF0000;
+        background-color: #011206;
+        border: 2px solid #FF0000;
+        border-radius: 5px;
+        transition: color 0.2s, background-color 0.2s;
+      }
+      
+      .buttons a:hover,
+      .buttons a:focus {
+        color: #000000;
+        background-color: #FF0000;
       }
       
       @media (max-width: 1200px) {
@@ -161,7 +195,12 @@
           width: 80%;
           padding: 0;
         }
+
+        .buttons {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
+      
     </style>
   </head>
 
@@ -192,12 +231,20 @@
     </div>
       
       <div class="button-container">
-        <img src="Zagreus.png" alt="Button container deco">
-        
-        <ul>
-          <li></li>
-        </ul>
-        
+        <div class="button-container">
+
+  <ul class="buttons">
+    <li><a href="#">Button One</a></li>
+    <li><a href="#">Button Two</a></li>
+    <li><a href="#">Button Three</a></li>
+    <li><a href="#">Button Four</a></li>
+    <li><a href="#">Button Five</a></li>
+    <li><a href="#">Button Six</a></li>
+  </ul>
+
+  <img class="zagreus" src="Zagreus.png" alt="Button container deco">
+
+</div>        
         <!-- Your six buttons go here -->
       </div>
   </body>
