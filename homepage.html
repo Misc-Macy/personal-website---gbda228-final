@@ -97,12 +97,37 @@
       Date retrieved: Nov. 27, 2026;
     -->
     
+    <!--
+      Code copied from: https://www.w3schools.com/cssref/css3_pr_background-size.php;
+      Author: W3 Schools;
+      Name: CSS Background-Size Property;
+      Description: Change the size of images in buttons as BG
+      Date retrieved: Nov. 27, 2026;
+    -->
+    
+    <!--
+      Code copied from: https://www.w3schools.com/cssref/pr_background-repeat.php;
+      Author: W3 Schools;
+      Name: CSS Background-Repeat Property;
+      Description: Make too-small BG images only appear once
+      Date retrieved: Nov. 27, 2026;
+    -->
+    
+    <!--
+      Code copied from: https://www.w3schools.com/cssref/pr_background-position.php;
+      Author: W3 Schools;
+      Name: CSS Background-Position Property;
+      Description: Specify what part on BG image to align by
+      Date retrieved: Nov. 27, 2026;
+    -->
+    
     <style>
       body {
         margin: 0;
         background-image: linear-gradient(to bottom right, #011206, #1c542c);
         background-attachment: fixed;
         min-height: 100vh;
+        /* used claude ai to tell me how to explain linear gradient more than w3*/
       }
 
       .container {
@@ -126,6 +151,7 @@
         height: 100%;
         object-fit: contain;
         object-position: left bottom;
+        /*used claude ai to help me position and stick the hades image to the side while also scaling with the changing size*/
       }
 
       .content {
@@ -156,6 +182,7 @@
         margin-left: 10%;
         margin-top: 10%;
         text-shadow: 0px 0px 5px #000000;
+        /*Used claude ai to talk me through using what values to use on the drop shadows - what each digit placeholder means*/
       }
 
       h2 {
@@ -197,6 +224,7 @@
         margin-top: auto;
         object-fit: cover;
         object-position: left bottom;
+        /*used claude ai to help me with sticking him to the right side of the screen*/
       }
       
       .button-container {
@@ -207,6 +235,8 @@
         min-height: 750px;
         display: grid;
         grid-template-columns: minmax(0, 1fr) auto;
+        /*used clause ai to help me make the buttons the right size based on the screen size, and also to show me how grid-template-columns works, although im still not the most sure about it - minmax to make the buttons not clip*/
+        /*ALSO I FORGOT I USED AI TO MOVE THE STUPID FRICKING BLACK BOX THINGY UGH - okay basically i couldnt figure out how to get the black box to line up exactly with the tip of the little decorative thing i put on top of it so i asked claude i was like yo can you do this and boom capisch its done*/
       }
 
       .buttons {
@@ -218,6 +248,7 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-auto-rows: 1fr;
         gap: 20px;
+        /*used ai to help me make the columns for the buttons stay always same distance away - grid rows to make them more vertically fill the same amt of space*/
       }
 
       .buttons li {
@@ -238,11 +269,13 @@
         border: 2px solid #FF0000;
         border-radius: 5px;
         transition: color 0.5s, background-color 0.5s;
+        /*used ai to make this transition for the hover animation because i thought it would be rlly cool to see it fade in and out im ngl i have spent like a solid few minutes just going over and off of the buttons to see the animation again and again*/
       }
 
       .buttons a:hover, .buttons a:focus {
         color: #000000;
         background-color: #FF0000;
+        /*used ai to tell me which style category things to use, those being hover and focus, to make sure the buttons do the transition thing when i go ove them*/
       }
       
       @media (max-width: 1200px) {
@@ -254,6 +287,8 @@
         .buttons {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
+        
+        /*used ai to estimate what sizes to make these values based on the size of the container when the box shrinks*/
       }
       
     </style>
@@ -296,6 +331,7 @@
           <li><a href="bosses.html">Bosses</a></li>
           <li><a href="items.html">Items</a></li>
         </ul>
+          <!--asked ai to clarify here to make sure the buttons would actually work cuz i forgot how to do the entire line here of li and a and href-->
 
         <img class="zagreus" src="Zagreus.png" alt="Button container deco">
 

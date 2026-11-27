@@ -63,6 +63,7 @@
         border: 2px solid #FF0000;
         border-radius: 5px;
         transition: color 0.5s, background-color 0.5s;
+        /*used ai here to help me with the margins and padding of the button to get it into a spot i liked*/
       }
 
       .back:hover, .back:focus {
@@ -124,6 +125,7 @@
         display: grid;
         grid-template-columns: repeat(6, minmax(0, 1fr));
         gap: 20px;
+        /*used ai to help me build the grip with the grid template columns repeat thing*/
       }
 
       .character-card {
@@ -142,12 +144,14 @@
         border: 2px solid #FF0000;
         border-radius: 5px;
         box-shadow: 0px 0px 15px #FFFFFF;
+        /*used ai here very helpful actually so i had this vision in mind but i couldnt get it with the text boxes and the images werent lining up with the boxes and the text shadows werent doing what i wanted them to do - claude ai told me to use aspect ratio to keep all the boxes the same size and that helped tremendously - also it told me about align content and that was also a lot better than me trying to align the text boxes with margins. Also the word break was from clause because the text kept spilling out, and lastly the background-size/position/repeat was also suggested by claude to keep the images within where i wanted them. then surprisingly to me too actually box-shadow i found naturally by just inputting shadow and box into the code editor here and being like wow i found this thing*/
       }
       
       .character-card span {
         padding: 8px;
         background-color: rgba(1, 18, 6, 0.75);
         border-radius: 0 0 3px 3px;
+        /*SPANNNN this thing is GREAT okay so i asked claude i was like i need a highlighter basically but it also needs to span the whole like box so that it doesnt look dumn and it said yo i gotchu try this out and that was epic so yeah i got this entire span thing from claude ai*/
       }
       
       @media (max-width: 1200px) {
@@ -198,6 +202,8 @@
 
       <h2>Gods</h2>
 
+      <!--okay so im not gonna comment on every single one AND this is just repeated in practically every section im just hoping you read this one first BUT i couldn't stand having so many files in the file manager so i grouped them into a different folder and then asked ai to show me how to access them from a different folder, hence the whole style url etc thing-->
+      
       <div class="grid">
         <div class="character-card" style="background-image: url('character-files/Zeus.webp');">
           <span>Zeus</span>
