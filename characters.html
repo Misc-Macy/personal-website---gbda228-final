@@ -78,6 +78,13 @@
         text-shadow: 0px 0px 5px #000000;
       }
 
+      h2 {
+        font-family: "Alegreya SC", serif;
+        font-size: 3.5em;
+        color: #FF0000;
+        text-shadow: 0px 0px 5px #FFFFFF;
+      }
+      
       p {
         font-family: "Alegreya SC", serif;
         color: #FF0000;
@@ -105,14 +112,53 @@
         margin: -2.5% 0 0;
         padding-top: 6%;
         min-height: 750px;
+        padding-bottom: 40px;
+      }
+      
+      .page-body h2 {
+        margin: 0 120px 30px;
+      }
+      
+      .grid {
+        margin: 0 120px 60px;
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 20px;
+        border: 1px solid #FF0000;
       }
 
+      .character-card {
+        aspect-ratio: 3 / 4;
+        display: grid;
+        align-content: center;
+        padding: 10px;
+        font-family: "Alegreya SC", serif;
+        font-size: 1.5em;
+        text-align: center;
+        word-break: break-all;
+        color: #FF0000;
+        background-color: #011206;
+        border: 2px solid #FF0000;
+        border-radius: 5px
+      }
+      
       @media (max-width: 1200px) {
         .content {
           width: 80%;
           padding: 0;
         }
+        
+        .grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
       }
+      
+      @media (max-width: 700px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      
     </style>
   </head>
 
@@ -136,12 +182,50 @@
       </div>
 
       <div class="box">
-        <img src="Container-Top.png" alt="Content container top">
+        <img src="Container-Top.png" alt="Content container top">  
       </div>
     </div>
 
     <div class="page-body">
-      <!-- Characters content goes here -->
+
+      <h2>Gods</h2>
+
+      <div class="grid">
+        <div class="card">God 1</div>
+        <div class="card">God 2</div>
+        <div class="card">God 3</div>
+        <div class="card">God 4</div>
+        <div class="card">God 5</div>
+        <div class="card">God 6</div>
+        <div class="card">God 7</div>
+        <div class="card">God 8</div>
+        <div class="card">God 9</div>
+        <div class="card">God 10</div>
+        <div class="card">God 11</div>
+      </div>
+
+      <h2>NPCs</h2>
+
+      <div class="grid">
+        <div class="card">NPC 1</div>
+        <div class="card">NPC 2</div>
+        <div class="card">NPC 3</div>
+        <div class="card">NPC 4</div>
+        <div class="card">NPC 5</div>
+        <div class="card">NPC 6</div>
+        <div class="card">NPC 7</div>
+        <div class="card">NPC 8</div>
+        <div class="card">NPC 9</div>
+        <div class="card">NPC 10</div>
+        <div class="card">NPC 11</div>
+        <div class="card">NPC 12</div>
+        <div class="card">NPC 13</div>
+        <div class="card">NPC 14</div>
+        <div class="card">NPC 15</div>
+        <div class="card">NPC 16</div>
+        <div class="card">NPC 17</div>
+      </div>
+
     </div>
   </body>
 </html>
