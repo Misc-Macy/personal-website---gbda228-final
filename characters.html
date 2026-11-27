@@ -129,16 +129,24 @@
       .character-card {
         aspect-ratio: 3 / 4;
         display: grid;
-        align-content: center;
-        padding: 10px;
+        align-content: end;
         font-family: "Alegreya SC", serif;
         font-size: 1.5em;
         text-align: center;
         word-break: break-all;
         color: #FF0000;
         background-color: #011206;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
         border: 2px solid #FF0000;
-        border-radius: 5px
+        border-radius: 5px;
+      }
+      
+      .character-card span {
+        padding: 8px;
+        background-color: rgba(1, 18, 6, 0.75);
+        border-radius: 0 0 3px 3px;
       }
       
       @media (max-width: 1200px) {
@@ -190,17 +198,50 @@
       <h2>Gods</h2>
 
       <div class="grid">
-        <div class="character-card">God 1</div>
-        <div class="character-card">God 2</div>
-        <div class="character-card">God 3</div>
-        <div class="character-card">God 4</div>
-        <div class="character-card">God 5</div>
-        <div class="character-card">God 6</div>
-        <div class="character-card">God 7</div>
-        <div class="character-card">God 8</div>
-        <div class="character-card">God 9</div>
-        <div class="character-card">God 10</div>
-        <div class="character-card">God 11</div>
+        <div class="character-card" style="background-image: url('Zeus.webp');">
+          <span>Zeus</span>
+        </div>
+        
+        <div class="character-card" style="background-image: url('Poseidon.webp');">
+          <span>Poseidon</span>
+        </div>
+        
+        <div class="character-card" style="background-image: url('Ares.webp');">
+          <span>Ares</span>
+        </div>
+        
+        <div class="character-card" style="background-image: url('Aphrodite.webp');">
+          <span>Aphrodite</span>
+        </div>
+        
+        <div class="character-card" style="background-image: url('Athena.webp');">
+          <span>Athena</span>
+        </div>
+        
+        <div class="character-card" style="background-image: url('Dionysus.webp');">
+          <span>Dionysus</span>
+        </div>
+        
+        <div class="character-card" style="background-image: url('Demeter.webp');">
+          <span>Demeter</span>
+        </div>
+        
+        <div class="character-card" style="background-image: url('Artemis.webp');">
+          <span>Artemis</span>
+        </div>
+        
+        <div class="character-card" style="background-image: url('Hermes.webp');">
+          <span>Hermes</span>
+        </div>
+        
+        <div class="character-card" style="background-image: url('Hades_Character.png');">
+          <span>Hades</span>
+        </div>
+        
+        <div class="character-card" style="background-image: url('Persephone.webp');">
+          <span>Persephone</span>
+        </div>
+        
       </div>
 
       <h2>NPCs</h2>
